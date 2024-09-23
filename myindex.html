@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./mystyle.css">
+    <!-- for icons font awsom cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-family from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nerko+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CU:wght@100..400&family=Protest+Guerrilla&family=SUSE:wght@100..800&family=Sevillana&display=swap"
+        rel="stylesheet">
+        <!-- animate.css -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <!-- AOS animate on scroll library , js and script link from site is given under body-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- locomotive scroll{not used} -->
+
+       <!-- website hosting-
+        1)netlify
+        2)github: used to control version of a code
+        git commands: 
+        * git status :used to check status of git in a folder 
+        * git init :useed to creat a git repository in a folder
+        * git add . :used to track 
+        * git commit -m "message" :used to store/save tracked files to git-->
+      
+</head>
+
+<body>
+<div class="container">
+    <!-- nav -->
+    <nav>
+        <!-- logo -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Portfolio.hu_full_logo.png" class="logo"
+            alt="No-image">
+        <!-- links -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- home -->
+    <section id="home">
+        <!-- home content -->
+        <div class="homeContent">
+            <!-- AOS animate on scroll library, comes when scrolling -->
+            <!-- animate__animated animate__bounce taken from animate.css , comes when refresh-->
+            <h1 class="animate__animated animate__bounce" id="username">I'm Mary <span id="lname">Angel</span></h1>
+            <p id="userDetails">This is my official portfolio website to describe all<br>details and work experience in
+                Web Development</p>
+            <a href="./MaryAngel_Resume.pdf" id="download" download="resume">Download CV</a>
+        </div>
+        <!-- home image -->
+        <div class="homeImage">
+            <img id="shape" class="group1" src="./images/yellowlogo-removebg-preview.png" alt="no image">
+            <img id="girl" class="group1" src="./images/coat-removebg-preview.png" alt="no image">
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <div class="sectionHead">
+            <h2 class="mainHead">About me</h2>
+            <span class="subHead">Introduction</span>
+        </div>
+        <div class="aboutBody">
+            <div data-aos="flip-down" class="aboutImage">
+                <img class="img1"
+                    src="https://as1.ftcdn.net/v2/jpg/03/18/17/40/1000_F_318174039_jyOwiQUNiLtXv3y3VYiH5qoclvFFBPCk.jpg"
+                    alt="no image">
+            </div>
+            <div class="aboutContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit quae, fuga qui laboriosam
+                    corporis sed minima deserunt laborum reiciendis illo inventore aliquam nostrum sapiente itaque.
+                    Quisquam officiis amet nulla.</p>
+                <div class="informations">
+                    <div class="infoBox">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Mary Angel</span>
+                    </div>
+                    <div class="infoBox">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>9964153849</span>
+                        <div class="infoBox">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>maryangelshaju@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- skill -->
+    <section id="skills">
+        <div class="sectionHead">
+            <h2 class="mainHead">Skills</h2>
+            <span class="subHead">My Skills</span>
+        </div>
+        <div class="skillContent">
+            <div class="progressBars">
+                <div class="bars">
+                    <h3 class="barHead">HTML</h3>
+                    <span class="barPercent">89%</span>
+                    <div class="basebar"></div>
+                    <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="basebar htmlbar"></div>
+                </div>
+                <div class="bars">
+                    <h3 class="barHead">CSS</h3>
+                    <span class="barPercent">83%</span>
+                    <div class="basebar"></div>
+                    <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="basebar cssbar"></div>
+                </div>
+                <div class="bars">
+                    <h3 class="barHead">JS</h3>
+                    <span class="barPercent">71%</span>
+                    <div class="basebar"></div>
+                    <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="basebar jsbar"></div>
+                </div>
+                <div class="bars">
+                    <h3 class="barHead">REACT</h3>
+                    <span class="barPercent">79%</span>
+                    <div class="basebar"></div>
+                    <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="basebar reactbar"></div>
+                </div>
+            </div>
+            <div data-aos="flip-left"  class="skillImage">
+                <img width="100%" class="mySkill"
+                    src="https://cdn.prod.website-files.com/6410ebf8e483b5bb2c86eb27/6410ebf8e483b59fa986fb66_ABM%20college%20web%20design%20skills%20main.jpg"
+                    alt="Skills">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="sectionHead">
+            <h2 class="mainHead">Contacts</h2>
+            <span class="subHead">My Contacts</span>
+        </div>
+        <div class="iconCollections">
+            <!-- linkedin icon -->
+             <div class="icon">
+                <a href="https://www.linkedin.com/in/maryangelshaju/" target="_blank"><i class="fa-brands fa-linkedin-in brands"></i></a>
+             </div>
+            <!-- guthub -->
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maryangelshaju/" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+             </div>
+            <!-- instagram -->
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maryangelshaju/" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+             </div>
+            <!-- facebook -->
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maryangelshaju/" target="_blank"><i class="fa-brands fa-facebook-f brands"></i></a>
+             </div>
+            <!-- twitter -->
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maryangelshaju/" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+             </div>
+            <!-- whatsapp -->
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maryangelshaju/" target="_blank"><i class="fa-brands fa-whatsapp brands"></i></a>
+             </div>
+        </div>
+    </section>
+<!-- footer -->
+    <footer>
+        <p id="copyright">&copy; My portfolio website- June 2024, All RightsReserved to &reg; Mary Angel</p>
+        <div class="icon uparrow">
+            <!-- <a href="#container"><i class="fa-solid fa-angle-up brands"></i></a> -->
+            <a href=""><i class="fa-solid fa-angle-up brands"></i></a>
+         </div>
+    </footer>
+
+</div>
+
+</body>
+
+<!-- script and js link of AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
